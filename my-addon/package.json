@@ -10,7 +10,7 @@
   "author": "",
   "exports": {
     ".": "./dist/index.js",
-    "./*": "./dist/*.js",
+    "./*": "./dist/*",
     "./addon-main.js": "./addon-main.cjs"
   },
   "files": [
@@ -65,6 +65,8 @@
     "version": 2,
     "type": "addon",
     "main": "addon-main.cjs",
-    "app-js": {}
+    "app-js": {
+      "./components/breadcrumbs-container/index.js": "./dist/_app_/components/breadcrumbs-container/index.js"
+    }
   }
 }
